@@ -1,6 +1,8 @@
 package com.firstapp.checkboxes.screens
 
+
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
@@ -24,19 +26,21 @@ data class GolfCourseInfo(
 
 @Composable
 fun DisplayCourse() {
-    Column(
-        modifier = Modifier
-            .padding(24.dp)
-            .fillMaxWidth()
-    ) {
-        Text("column 1")
-    }
-    Column(
-        modifier = Modifier
-            .padding(24.dp)
-            .fillMaxWidth()
-    ) {
-        Text("column 2")
+    Row(modifier = Modifier.fillMaxWidth()) {
+        Column(
+            modifier = Modifier
+                .padding(5.dp)
+                .fillMaxWidth(.5f)
+        ) {
+            Text("column 1")
+        }
+        Column(
+            modifier = Modifier
+                .padding(5.dp)
+                .fillMaxWidth(.5f)
+        ) {
+            Text("column 2")
+        }
     }
 }
 

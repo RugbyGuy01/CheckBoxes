@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.firstapp.checkboxes.screens.DisplayCourse
 import com.firstapp.checkboxes.ui.theme.CheckboxesTheme
 
 import com.firstapp.checkboxes.utils.SelectPar
@@ -25,7 +26,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    TutorialCardScreen()
+                    DisplayCourse()
+                    //utorialCardScreen()
                 }
             }
         }
